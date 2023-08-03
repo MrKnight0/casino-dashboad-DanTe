@@ -1,28 +1,18 @@
-import React from 'react'
-import LoginForm from './components/LoginForm';
-import RegisterForm from './components/RegisterForm';
-import Navbar from './components/Navbar';
-import LandingPage from './components/LandingPage';
+import Header from './components/common/Header';
+import Sidebar from './components/common/Sidebar';
+import Accordion from './components/Accordion';
+import React from 'react';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 function App() {
 
+
   return (
-
-    <Router>
-      <Routes>
-        <Route path='/' element={<LandingPage/>}/>
-      </Routes>
-    </Router>
-    // <Router>
-    //   <Routes>
-    //     <Route path='/' element={<LoginForm/>} />
-
-    //     <Route path='/dashboard' element={<Navbar/>}/>
-
-    //     <Route path='/register' element={<RegistrationForm />} />
-    //   </Routes>
-    // </Router>
+    <div>
+      <Header title={'Dashboard'} />
+      <hr />
+      <Sidebar/>
+    </div>
   );
 }
 

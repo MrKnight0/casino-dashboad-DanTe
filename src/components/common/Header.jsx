@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import AntayLogo from '../common/antay-logo.png'
+import { IconLogout } from '@tabler/icons-react';
 
 const Header = ({ title }) => {
 
@@ -9,9 +10,9 @@ const Header = ({ title }) => {
 
     const styles = 'hover:text-orange-500 hover:underline'
     return (
-        <header className='bg-white py-4 flex items-center justify-between'>
+        <header className='bg-white py-4 flex items-center justify-between transition'>
             <img src={AntayLogo} alt="Antay Logo" width={100} className='ml-8'/>
-            <nav className='mr-8 space-x-6 font-roboto text-sm text-black'>
+            <nav className='mr-8 space-x-6 font-roboto text-sm text-black '>
                 <a href="#" className={styles}>Casita</a>
                 <a href="#" className={styles}>Dashboard</a>
                 <a href="#" className={styles}>Informes</a>

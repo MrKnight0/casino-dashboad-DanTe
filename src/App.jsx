@@ -9,9 +9,9 @@ function App() {
 
   return (
     <div>
-      <Header title={'Dashboard'} />
+      <Header title={'Dashboard'}/>
       <hr />
-      <Sidebar/>
+      <Sidebar />
     </div>
   );
 }
